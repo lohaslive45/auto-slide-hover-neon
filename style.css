@@ -19,7 +19,7 @@ section .row {
   width: 100%;
   display: flex;
   padding: 10px 0;
-  white-space: nowrap; /*!---------------------------------*/
+  white-space: nowrap; /*!段落中文本--不換行--*/
   font-size: 64px;
   transform: rotate(-30deg);
 }
@@ -28,7 +28,7 @@ i {
   color: rgba(0, 0, 0, 0.5);
   transition: 1s;
   padding: 0 5px;
-  user-select: none; /*!-----------------------------------*/
+  user-select: none; /*!用戶--不可選取元素--*/
   cursor: default;
 }
 
@@ -41,7 +41,7 @@ i:hover {
 /*todo---左右滑動循序動畫(基數行)----*/
 section .row div {
   animation: animate1 80s linear infinite;
-  animation-delay: -80s; /*!------------------------------*/
+  animation-delay: -80s; /*!允許負值--(-80s)使動畫馬上開始==跳過80s進入動畫*/
 }
 
 section .row div:nth-child(2) {
@@ -70,7 +70,7 @@ section .row div:nth-child(2) {
 /**---左右滑動循序動畫(偶數行)----*/
 section .row:nth-child(even) div {
   animation: animate3 80s linear infinite;
-  animation-delay: -80s; /*!------------------------------*/
+  animation-delay: -80s;
 }
 
 section .row:nth-child(even) div:nth-child(2) {
